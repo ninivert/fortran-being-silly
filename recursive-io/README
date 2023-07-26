@@ -1,0 +1,5 @@
+# Fortran being silly while doing recursive IO
+
+9.12#2 https://j3-fortran.org/doc/year/10/10-007r1.pdf
+
+> An input/output statement that is executed while another input/output statement is being executed is a recursive input/output statement. A recursive input/output statement shall not identify an external unit that is identified by another input/output statement being executed except that a child data transfer statement may identify itsparent data transfer statement external unit.
